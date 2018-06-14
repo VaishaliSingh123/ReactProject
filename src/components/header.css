@@ -1,0 +1,16 @@
+.Picture{
+width: 400px;
+height: 100px;
+margin-left: 50px;
+float:left;
+}
+.headerText{
+margin-left:840px;
+margin-top:35px;
+font-family: 'Arial';
+font-size: 35px;
+color: #ccc;
+}
+.w3-container{
+  height:100px;
+}

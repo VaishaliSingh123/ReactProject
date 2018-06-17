@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Landing from './components/Landing';
 import AddEmployee from './components/AddEmployee';
 import CommonHeader from './components/CommonHeader';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Link, Route, Switch } from 'react-router-dom';
 
 class App extends Component {
   constructor(props){
@@ -52,9 +52,12 @@ class App extends Component {
   return (
     <div >
       <Header />
-      {header}
+      {/* {header}
       {page}
-      {creatingData}
+      {creatingData} */}
+      <Route path="/Login" exact={true} component={Login}/>
+      <Route path="/Landing" exact={true} component={Landing}/>
+      <Route path="/AddEmployee"  exact={true} component={AddEmployee}/>
   </div>
 );
 }

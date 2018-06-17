@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import CernerPicture from './CernerPicture.png';
 import commonHeader from './commonHeader.css';
-import { Link } from 'react-router';
 import AddEmployee from './AddEmployee';
+import Landing from './Landing';
+import { Link, Route, Switch } from 'react-router-dom';
+
 
 
 class CommonHeader extends React.Component {
@@ -11,8 +13,8 @@ render() {
     return (
       <div>
       <ul className="componentHeader">
-          <li className="componentHeaderList"><a className="active" href="#home">Home</a></li>
-          <li className="componentHeaderList"><a href="#AddEmployee">Add Employee</a></li>
+          <li className="componentHeaderList"><Link className="active" to="/Landing">Home</Link></li>
+          <li className="componentHeaderList"><Link to="/AddEmployee">Add Employee</Link></li>
       </ul>
       </div>
     );

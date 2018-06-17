@@ -34,9 +34,9 @@ render() {
     const section  = inputEmployeeSection.value;
   console.log(name);
   this.props.createNewEntry(name,designation,section);
-  const name = '';
-  const designation = '';
-  const section  ='';
+  this.refs.inputEmployeeName.value='';
+  this.refs.inputEmployeeDesignation.value='';
+  this.refs.inputEmployeeSection.value='';
 
 
   }
